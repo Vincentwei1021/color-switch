@@ -1,3 +1,4 @@
+import FeedbackWidget from "@/components/FeedbackWidget";
 import Script from "next/script";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Inter } from "next/font/google";
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={`${jakarta.variable} ${inter.variable} font-sans antialiased bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100`}>
         {children}
+        <FeedbackWidget />
       </body>
     </html>
   );
