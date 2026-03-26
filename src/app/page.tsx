@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import ColorConverter from "@/components/ColorConverter";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import DevToolsNav from "@/components/DevToolsNav";
 import { faqData } from "@/data/faq";
 
 const webAppSchema = {
@@ -133,6 +134,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <DevToolsNav currentSlug="color-switch" />
       </main>
       <Footer />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }} />
